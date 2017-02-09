@@ -1,0 +1,89 @@
+<!--PB 1.00 Footer footer.liquid-->
+
+<!--Footer Styling-->
+<style>
+  footer#pb-footer {
+      text-align: center;
+      padding: 0px 1% 10px;
+      width: 98%;
+      margin: 0 auto;
+  }
+   footer#pb-footer p{
+      font-size: 12px;
+      line-height: 21px;
+  }
+  
+  ul#pb-footer-links {
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  ul#pb-footer-links li {
+      display: inline-block;
+      margin: 3px 5px;
+      font-size: 13px;
+      line-height: 14px;
+  }
+  
+  .footer-bottom {
+      font-size: 12px;
+      line-height: 15px;
+      margin: 25px 0 0;
+  }
+  
+  @media(max-width:480px){
+    ul#pb-footer-links li {
+        display: block;
+        margin: 3px 5px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+  }
+  
+</style>
+
+<hr style="margin: 0px 0px 20px;">
+<footer id="pb-footer">
+  
+  <div class="container">
+    
+    {% if settings.display_footer_logo %}
+    	<div id="footerLogo">
+            {{ 'logo_footer_top.png' | asset_url | img_tag }}
+    	</div>
+    {% endif %}
+    
+    <ul id="pb-footer-links" >
+      {% for link in linklists.footer.links %}
+      {% assign child_list_handle = link.title | handleize %}
+
+        <li>
+          <a href="{{ link.url }}" class="footer-links__link">{{ link.title }}</a>
+        </li>
+
+      {% endfor %}
+    </ul>
+    
+    <p>4270 S. Decatur Blvd Ste. B8-9 Las Vegas, NV. United States 89103</p>
+    
+    <div class="footer-bottom">
+      {% if settings.display_footer_address %}
+        <address>
+          {% if settings.footer_address_code %}
+          {{ settings.footer_address_code }}
+          {% endif%}
+        </address>
+     {% endif %}
+    </div>
+    
+    
+  </div>
+</footer>
+
+
+<!--End PB 1.00 Footer footer.liquid-->
+
+
+
+<!--Cart Success Alerts-->
+{% include 'message-modal' %}

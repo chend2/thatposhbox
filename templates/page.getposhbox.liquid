@@ -1,0 +1,96 @@
+<!--Get PoshBox CSS: home-lp.css asset -->
+{{ 'getposhbox.css' | asset_url | stylesheet_tag }}
+
+<section id="getPoshMain">
+  
+  <div class="fullContainer centeredContainer">
+    
+    <div id="getPoshMainTop">
+      <h1>One Box, Two Ways To Subscribe</h1>
+      <p><strong>Choose the “Seasonal Plan”</strong> if you want to pay for each poshbox seperately every 3 months.</p>
+      <p><strong>Choose the “Annual Plan”</strong> to pre-pay for 4 poshboxes and save $20 annually.</p>
+    </div>
+    
+    <div id="getPoshMainPlans">
+       
+      <div id="getPoshSeasonalBox" class="getPoshBoxBox">
+        <h2>Seasonal Plan</h2>
+        <h3 class="getPoshPrice">$49.99</h3>
+        <p>Billed once every 3 months</p>
+        
+        <div class="getPoshCTABig getPoshCTAseasonal">
+          <a href="">Get Seasonal Plan »</a>
+        </div>
+          
+      </div>
+
+      <div id="getPoshAnnualBox" class="getPoshBoxBox">
+        
+        <div id="bestValueTabContainer">
+          <div id="bestValueTab">
+            <h3>Best Value</h3>
+            <p>Save $20 Annually vs. Seasonal Plan</p>
+          </div>
+        </div>
+        
+        
+        <h2>Annual Plan</h2>
+        <h3 class="getPoshPrice">$179.99</h3>
+        <p>Billed once per year</p>
+        
+        <div class="getPoshCTABig getPoshCTAannual">
+          <a href="">Get Annual Plan »</a>
+        </div>
+      </div>
+      
+      <div style="clear:both;"></div>
+      
+    </div>
+             
+       
+    
+  </div>
+
+</section>
+
+<div class="grayBackground">
+  <div class="fullContainer">
+    <div id="getPoshLeft">
+      <img src="{{ 'getposhbox_collage.png' | asset_url }}"/>
+      <p>Examples of brands we work with.</p>
+    </div>
+
+    <div id="getPoshRight">
+
+      <h1>Subscribe Today to Get:</h1>
+      <ul id="getPoshList">
+        <li>Access to our exclusive store with up to 80% savings on products found in PoshBox.</li>
+        <li>A new, unique Poshbox every 3 months.</li>
+        <li>Exclusive offers from our network of beauty, health, and fitness brands.</li>
+      </ul>
+
+      <div id="getPoshCTAs">
+          <div class="getPoshCTASmall getPoshCTAseasonal">
+            <a href="">Get Seasonal Plan »</a>
+          </div>
+
+          <div class="getPoshCTASmall getPoshCTAannual">
+            <a href="">Get Annual Plan »</a>
+          </div>
+        	
+          <div style="clear:both;"></div>
+        
+      </div>
+
+    </div>
+    
+    <div style="clear:both;"></div>
+
+
+  </div>
+</div>
+
+
+<script>
+  jQuery('.remove-container').removeClass('container');
+</script>

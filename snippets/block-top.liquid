@@ -1,0 +1,173 @@
+{% if template == "index" and settings.enable_block_carousel %}	
+<div class="block-carousel">
+  <div id="carousel-top">
+    {% if settings.enable_slide_image_1 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide1.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_1 != blank %}
+        {{ settings.block_slide_content_1 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if settings.enable_slide_image_2 %}
+    <div class="slide-carousel"> 
+      <div class="images">
+        {{ 'block_slide2.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_2 != blank %}
+        {{ settings.block_slide_content_2 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if settings.enable_slide_image_3 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide3.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_3 != blank %}
+        {{ settings.block_slide_content_3 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if settings.enable_slide_image_4 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide4.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_4 != blank %}
+        {{ settings.block_slide_content_4 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if settings.enable_slide_image_5 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide5.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_5 != blank %}
+        {{ settings.block_slide_content_5 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if settings.enable_slide_image_6 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide6.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_6 != blank %}
+        {{ settings.block_slide_content_6 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if settings.enable_slide_image_7 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide7.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_7 != blank %}
+        {{ settings.block_slide_content_7 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if settings.enable_slide_image_8 %}
+    <div class="slide-carousel">
+      <div class="images">
+        {{ 'block_slide8.jpg' | asset_url | img_tag }}
+      </div>
+
+      <div class="content-slider">
+        {% if settings.block_slide_content_8 != blank %}
+        {{ settings.block_slide_content_8 }}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $("#carousel-top").owlCarousel({
+      itemsCustom : [
+        [320, 1],
+        [360, 1],
+        [450, 1],
+        [600, 2],
+        [800, 2],
+        [1000, {{ settings.limit_block_item }}],
+        [1200, {{ settings.limit_block_item }}],
+        [1400, {{ settings.limit_block_item }}],
+        [1600, {{ settings.limit_block_item }}]
+      ],
+      autoPlay : false,
+      stopOnHover : false,
+
+      lazyLoad : false,
+      lazyFollow : true,
+      lazyEffect : "fade",
+      pagination : false,
+
+      // Navigation
+      navigation : true,
+      navigationText : ['Prev','Next'],
+      rewindNav : true,
+      scrollPerPage : false,
+
+    });
+
+  })
+
+</script>
+
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

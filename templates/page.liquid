@@ -1,0 +1,30 @@
+<style>
+
+  .pageContainer {
+      padding: 10px 0%;
+      width: 100%;
+  }
+
+  .page-header {
+      margin: 0px;
+      padding: 0;
+      border: 0;
+  }
+  
+</style>
+
+<!--page.liquid-->
+<div class="pageContainer">
+  <header class="page-header">
+      <h2>{{ page.title }}</h2>
+  </header>
+
+  {% comment %}
+    Regular page content goes here.
+  {% endcomment %}
+  <div class="rte">
+    {{ page.content }}
+  </div>
+</div>
+
+

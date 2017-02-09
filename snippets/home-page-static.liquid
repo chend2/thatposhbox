@@ -1,0 +1,166 @@
+
+{% if template == "index" and settings.enable_block_static %}
+{% if settings.enable_block_images %}
+<div class="images-top">
+  	{{ 'block_top1.png' | asset_url | img_tag }}
+</div>
+{% endif %}
+<div class="heading-title">
+  {% if settings.block_top_title_1 != blank %}
+  <h2>
+    <span>{{ settings.block_top_title_1 }}</span>
+  </h2>
+  {% endif %}
+  {% if settings.block_top_sub_1 != blank %}
+  <p>
+    {{ settings.block_top_sub_1 }}
+  </p>
+  {% endif %}
+</div> 
+{% if settings.block_top_title_2 != blank %}
+<div class="title-2">{{ settings.block_top_title_2 }}</div>
+{% endif %}
+<div class="block-galery">
+ 
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="block-galery-1 block-galery-item">
+      <div class="images">
+        {{ 'block_thumb1.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_1 != blank %}
+        {{ settings.block_content_1 }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="block-galery-left block-galery-item">
+      <div class="images">
+        {{ 'block_thumb2.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_2 != blank %}
+        {{ settings.block_content_2 }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="block-galery-right block-galery-item">
+      <div class="images">
+        {{ 'block_thumb3.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_3 != blank %}
+        {{ settings.block_content_3 }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="block-galery-left block-galery-item">
+      <div class="images">
+        {{ 'block_thumb4.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_4 != blank %}
+        {{ settings.block_content_4 }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="block-galery-right block-galery-item">
+      <div class="images">
+        {{ 'block_thumb5.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_5 != blank %}
+        {{ settings.block_content_5 }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="block-galery-1 block-galery-item">
+      <div class="images">
+        {{ 'block_thumb6.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_6 != blank %}
+        {{ settings.block_content_6 }}
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="block-galery-left ">
+      <div class="tp-inner-block  block-galery-item">
+        <div class="images">
+          {{ 'block_thumb7.jpg' | asset_url | img_tag }}
+        </div>
+        <div class="content-slider">
+          {% if settings.block_content_7 != blank %}
+          {{ settings.block_content_7 }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="tp-inner-block  block-galery-item" >
+        <div class="images">
+          {{ 'block_thumb8.jpg' | asset_url | img_tag }}
+        </div>
+        <div class="content-slider">
+          {% if settings.block_content_8 != blank %}
+          {{ settings.block_content_8 }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="block-galery-right block-galery-item">
+      <div class="images">
+        {{ 'block_thumb9.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_9 != blank %}
+        {{ settings.block_content_9 }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="block-galery-1 block-galery-item ">
+      <div class="images">
+        {{ 'block_thumb10.jpg' | asset_url | img_tag }}
+      </div>
+      <div class="content-slider">
+        {% if settings.block_content_10 != blank %}
+        {{ settings.block_content_10 }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% if settings.block_button_text != blank %}
+<div class="block-button">
+  <a href="{{ settings.block_button_blink }} "><span>{{ settings.block_button_text }} </span></a>
+</div>
+{% endif %}
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

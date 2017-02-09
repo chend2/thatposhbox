@@ -1,0 +1,488 @@
+<style>
+
+  /* Shopify skips first css for some reason */
+  spacer{
+
+  }
+
+  hr {
+      margin: 0px;
+      padding: 0px;
+  }
+
+  h1{
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+  h2 {
+      font-size: 44px;
+      line-height: 45px;
+      margin: 0px 0px 10px 0px;
+      padding: 0px;
+  }
+
+  p {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0px 0px 10px 0px;
+      padding: 0px;
+  }
+
+  .fullContainer {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 35px 3%;
+  }
+
+  .centeredContainer {
+      text-align: center;
+  }
+
+  .grayBackground {
+      background-color: #fafafa;
+  }
+
+
+  #getPoshMain {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      background-image: url(https://cdn.shopify.com/s/files/1/1759/7471/t/2/assets/getposhbox_background.jpg?6538637462984477240);
+      background-size: cover;
+      background-position: center;
+      padding: 10px 0;
+      border-bottom: #eee solid 1px;
+  }
+
+  #getPoshMainTop h1 {
+      font-size: 39px;
+      line-height: 43px;
+      margin: 8px 0px;
+      padding: 0px;
+  }
+
+  #getPoshMainTop p {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 12px 0px;
+      padding: 0px;
+  }
+
+  .getPoshBoxBox{
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(196, 196, 196);
+      border-radius: 5px;
+      background-image: -moz-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.35);
+      float: left;
+      width: 46%;
+      margin: 10px 2%;
+      padding: 22px;
+      position:relative;
+  }
+
+  div#getPoshMainPlans {
+      text-align: center;
+      margin: 60px auto 0px;
+      display: inline-block;
+      width: 85%;
+  }
+
+  .getPoshCTABig {
+      margin: 10px auto;
+      border-radius: 5px;
+      box-shadow: 0px 6px 0px 0px rgba(151, 16, 50, 0.004), 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+      text-align: center;
+  }
+  
+  .getPoshCTABig:hover{
+    cursor: pointer;
+  }
+
+  .getPoshCTABig a {
+      display: block;
+      color: #fff;
+      font-size: 22px;
+      line-height: 24px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0px auto;
+      padding: 15px 15px;
+  }
+
+  .getPoshCTAseasonal {
+      background-color: #e6e6e6;
+      border-bottom: 6px #cccccc solid;
+  }
+
+  .getPoshCTAseasonal a {
+      color:#525252;
+  }
+
+  .getPoshCTAseasonal:hover{
+    background-color: #dedede;
+  }
+
+  .getPoshCTAannual {
+      background-color: rgb(235, 29, 81);
+      border-bottom: 6px #971032 solid;
+  }
+
+  .getPoshCTAannual a {
+      color:#fff;
+  }
+  
+  .getPoshCTAannual:hover{
+    background-color: #ff4171;
+  }
+
+  h3.getPoshPrice {
+      font-weight: bold;
+      font-size: 59px;
+      line-height: 62px;
+      margin: 10px auto 5px;
+      color: #656565;
+  }
+
+  .getPoshBoxBox h2 {
+      font-size: 30px;
+      line-height: 35px;
+      margin: 0px;
+  }
+
+  #getPoshAnnualBox h3{
+    color: #eb1d51;
+  }
+
+  #bestValueTabContainer{
+      position: absolute;
+      top: -60px;
+      height: 60px;
+      margin: 0 auto;
+      width: 100%;
+      left: 0px;
+  }
+
+  div#bestValueTab {
+      position:relative;
+      width:auto;
+      display:inline-block;
+      margin:0 auto;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(220, 220, 220);
+      background-image: -moz-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 10px 15px;
+      height: 60px;
+  }
+
+  #bestValueTab h3 {
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  #bestValueTab p {
+      margin: 0px;
+      padding: 0px;
+      font-size: 14px;
+      line-height: 17px;
+  }
+
+  div#getPoshLeft {
+      float: left;
+      width: 40%;
+      margin: 0px 3%;
+      text-align: center;
+  }
+
+  div#getPoshRight {
+      float: left;
+      width: 50%;
+      margin: 0px 2%;
+  }
+
+  #getPoshLeft p {
+      font-size: 13px;
+      line-height: 15px;
+      font-style: italic;
+  }
+
+  .getPoshCTASmall {
+      margin: 5px;
+      float: left;
+      border-radius: 5px;
+      box-shadow: 0px 6px 0px 0px rgba(151, 16, 50, 0.004), 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+      text-align: center;
+  }
+  
+  .getPoshCTASmall:hover{
+    cursor: pointer;
+  }
+
+  .getPoshCTASmall a {
+      display: block;
+      font-size: 14px;
+      line-height: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0px 5px;
+      padding: 15px 15px;
+  }
+
+  ul#getPoshList {
+     list-style: none;
+      margin: 5px 0 5px 10px;
+  }
+
+  #getPoshList li {
+      font-size: 20px;
+      line-height: 22px;
+      background-image: url(https://cdn.shopify.com/s/files/1/1759/7471/t/2/assets/getposhbox_check.png?10837171871578264967);
+      background-repeat: no-repeat;
+      padding: 0px 0px 0px 25px;
+      margin: 20px 0;
+  }
+
+
+  @media(max-width:960px){
+    
+    div#getPoshMainPlans {
+        width: 100%;
+    } 
+    
+  }
+
+  @media(max-width:800px){
+    
+    #getPoshMainTop h1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    
+    #getPoshMainTop p {
+      font-size: 16px;
+      line-height: 18px;
+	}
+    
+    #getPoshRight h1 {
+      font-size: 32px;
+      line-height: 34px;
+	}
+    
+    #getPoshList li {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .getPoshCTABig a {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 13px 10px;
+    }
+    
+    h3.getPoshPrice {
+        font-size: 51px;
+        line-height: 55px;
+    }
+    
+    .getPoshBoxBox p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    #bestValueTab p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    
+  }
+
+  @media(max-width:660px){
+    
+    #getPoshMainTop h1 {
+      font-size: 33px;
+      line-height: 36px;
+	}
+    
+    #getPoshMainTop p {
+        font-size: 14px;
+        line-height: 16px;
+        width: 85%;
+        margin: 10px auto;
+    }
+    
+    .getPoshBoxBox {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(196, 196, 196);
+        border-radius: 5px;
+        background-image: -moz-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(246,246,246) 0%, rgb(255,255,255) 100%);
+        box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.35);
+        float: none;
+        width: 85%;
+        margin: 10px auto;
+        padding: 22px;
+        position: relative;
+    }
+    
+    #getPoshMainPlans {
+        text-align: center;
+        margin: 10px auto 0px;
+        display: inline-block;
+        width: 85%;
+    }
+    
+    div#getPoshAnnualBox {
+        margin: 80px auto 0;
+    }
+    
+    div#getPoshMainPlans {
+        margin: 10px auto 0px;
+    }
+
+    div#getPoshLeft {
+        float: none;
+        width: 60%;
+        margin: 10px auto;
+    }
+    
+    div#getPoshRight {
+        float: none;
+        width: 90%;
+        margin: 45px auto 10px;
+    }
+    
+  }
+
+  @media(max-width:480px){
+    
+    .getPoshCTAseasonal {
+      	border-bottom: 4px #cccccc solid;
+	}
+    
+    .getPoshCTAannual {
+        border-bottom: 4px #971032 solid;
+    }
+    
+    .fullContainer {
+        margin: 0 auto;
+        padding: 20px 2%;
+        width: 98%;
+    }
+    
+    .getPoshCTABig a {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 13px 10px;
+    }
+    
+    .getPoshBoxBox h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    h3.getPoshPrice {
+        font-size: 45px;
+        line-height: 46px;
+    }
+
+    .getPoshBoxBox p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    div#getPoshLeft {
+        width: 80%;
+    }
+    
+    .getPoshCTASmall {
+      float: none;
+      margin: 10px auto;
+    }
+    
+    #getPoshList li {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0px 0px 0px 23px;
+        background-size: 16px;
+    }
+    
+    #getPoshRight h1 {
+        font-size: 24px;
+        line-height: 27px;
+        text-align: center;
+    }
+    
+  }
+
+    @media(max-width:340px){
+      
+      div#getPoshAnnualBox {
+          margin: 95px auto 0;
+      }
+      
+      #bestValueTabContainer {
+          top: -75px;
+          height: 75px;
+      }
+      
+      div#bestValueTab {
+          padding: 10px 10%;
+          height: 75px;
+          width: 80%;
+      }
+      
+      #bestValueTab h3 {
+          font-size: 16px;
+          line-height: 20px;
+      }
+      
+      #bestValueTab p {
+          font-size: 12px;
+          line-height: 13px;
+          margin: 5px 0 0 0;
+      }
+      
+      .getPoshBoxBox {
+          width: 92%;
+      }
+      
+      .getPoshCTABig a {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 13px 10px;
+      }
+      
+      #getPoshMainTop h1 {
+          font-size: 24px;
+          line-height: 27px;
+      }
+      
+      #getPoshMainTop p {
+          font-size: 12px;
+          line-height: 14px;
+          width: 90%;
+          margin: 10px auto;
+      }
+      
+    }
+    
+
+
+</style>
